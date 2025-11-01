@@ -11,7 +11,7 @@ services:
     ports:
       - "3306:3306"
 
-  25RP19281_app:
+  25rp19281_app:
     build: .
     container_name: 25rp19281_app
     depends_on:
@@ -26,7 +26,7 @@ services:
     volumes:
       - ./src:/var/www/html
 
-  25610025_phpmyadmin:
+  25rp19281_phpmyadmin:
     image: phpmyadmin/phpmyadmin
     container_name: 25rp19281_phpmyadmin
     environment:
